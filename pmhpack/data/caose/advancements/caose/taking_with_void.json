@@ -1,0 +1,48 @@
+{
+  "parent": "caose:caose/incaose",
+  "display": {
+      "title": {
+          "text": "공허와 대화하기",
+          "color": "black",
+          "bold": false
+      },
+      "description": {
+          "text": "세계의 바깥으로 떨어지세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:barrier"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "isLocate": {
+      	"trigger": "minecraft:location",
+      	"conditions": {
+			"position": {
+				"x": {
+					"min": -9999999999999,
+					"max": 9999999999999
+				},
+				"y": {
+					"min": -64,
+					"max": -10
+				},
+				"z": {
+					"min": -9999999999999,
+					"max": 9999999999999
+				}
+			}
+      	}
+    }
+  },
+  "requirements": [
+      [
+          "isLocate"
+      ]
+  ]
+}

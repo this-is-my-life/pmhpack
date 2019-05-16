@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/bbbarned_barrier",
+  "display": {
+      "title": {
+          "text": "드디어 끝이군",
+          "color": "aqua",
+          "bold": false
+      },
+      "description": {
+          "text": "디버그 막대를 구워 삼지창을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:trident"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:trident",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

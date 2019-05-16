@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/incaose",
+  "display": {
+      "title": {
+          "text": "그렇죠! 그겁니다!",
+          "color": "gold",
+          "bold": false
+      },
+      "description": {
+          "text": "커멘드 블럭을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:command_block"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:command_block",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

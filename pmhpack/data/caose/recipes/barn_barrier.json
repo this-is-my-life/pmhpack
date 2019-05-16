@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:barrier"
+    },
+    "result": "minecraft:structure_void",
+    "experience": 0,
+    "cookingtime": 8000
+}

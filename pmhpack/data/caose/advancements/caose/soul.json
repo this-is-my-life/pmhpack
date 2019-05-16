@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/incaose",
+  "display": {
+      "title": {
+          "text": "영혼 모래에서 영혼을 빼봅시다",
+          "color": "white",
+          "bold": false
+      },
+      "description": {
+          "text": "영혼 모래를 구워 모래를 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:soul_sand"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:sand",
+                  "count": {
+                      "min": 1,
+                      "max": 9999999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

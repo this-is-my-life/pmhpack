@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/bedrock",
+  "display": {
+      "title": {
+          "text": "투명한 기반암",
+          "color": "white",
+          "bold": false
+      },
+      "description": {
+          "text": "기반암을 구워 방벽을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:barrier"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:barrier",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

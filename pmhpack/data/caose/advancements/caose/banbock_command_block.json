@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/command_block",
+  "display": {
+      "title": {
+          "text": "어음... 남용하진 말아주세요",
+          "color": "dark_purple",
+          "bold": false
+      },
+      "description": {
+          "text": "반복형 커멘드 블럭을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:repeating_command_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:repeating_command_block",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/creeper_spawn",
+  "display": {
+      "title": {
+          "text": "크리퍼님이 화형을 선고받았습니다",
+          "color": "red",
+          "bold": false
+      },
+      "description": {
+          "text": "크리퍼 스폰알을 구워 크리퍼 머리를 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:creeper_head"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:creeper_head",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

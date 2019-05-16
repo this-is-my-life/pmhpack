@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:structure_block"
+    },
+    "result": "minecraft:debug_stick",
+    "experience": 0,
+    "cookingtime": 8000
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "caose:caose/rule",
+  "display": {
+      "title": {
+          "text": "와! 필드시스템!",
+          "color": "green",
+          "bold": false
+      },
+      "description": {
+          "text": "/function makefeld를 입력하세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:grass_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

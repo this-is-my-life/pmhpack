@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:debug_stick"
+    },
+    "result": "minecraft:trident",
+    "experience": 0,
+    "cookingtime": 8000
+}

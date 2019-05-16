@@ -1,0 +1,3 @@
+# MOTD
+
+tellraw @s ["",{"text":"============ MOTD =============\n","bold":true,"color":"red"},{"selector":"@s ","bold":true,"color":"red"},{"text":" \ub2d8! 2ndCaose\uc11c\ubc84\uc5d0 \uc624\uc2e0\uac78 \ud658\uc601\ud569\ub2c8\ub2e4!\n\n/function rules\ub97c \uc785\ub825\ud574\uc11c \uaddc\uce59\uc744 \ud655\uc778\ud55c\ud6c4\n/function help\ub97c \uc785\ub825\ud574\uc11c \uba85\ub839\uc5b4\ub97c \ud655\uc778\ud558\uc138\uc694!","bold":true,"color":"gold"},{"text":"\n","bold":true},{"text":"===============================","bold":true,"color":"red"}]

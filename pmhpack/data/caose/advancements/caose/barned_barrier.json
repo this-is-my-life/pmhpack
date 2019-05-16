@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/barrier",
+  "display": {
+      "title": {
+          "text": "공허를 들다",
+          "color": "blue",
+          "bold": false
+      },
+      "description": {
+          "text": "방벽을 구워 구조물 공허 공간을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:structure_void"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:structure_void",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

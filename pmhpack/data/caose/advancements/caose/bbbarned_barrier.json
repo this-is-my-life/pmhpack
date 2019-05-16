@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/bbarned_barrier",
+  "display": {
+      "title": {
+          "text": "정의를 정의하다",
+          "color": "gold",
+          "bold": false
+      },
+      "description": {
+          "text": "구조물 블럭을 구워 디버그 막대를 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:debug_stick"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:debug_stick",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

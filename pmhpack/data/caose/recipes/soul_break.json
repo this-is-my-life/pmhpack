@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:soul_sand"
+    },
+    "result": "minecraft:sand",
+    "experience": 0,
+    "cookingtime": 20
+}

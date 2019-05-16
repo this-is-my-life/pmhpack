@@ -1,0 +1,31 @@
+{
+  "display": {
+      "title": {
+          "text": "Caose",
+          "color": "gold",
+          "bold": false
+      },
+      "description": {
+          "text": "카오스에 입성하기",
+          "color": "aqua"
+      },
+      "icon": {
+          "item": "minecraft:red_mushroom_block"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+      "isThere": {
+          "trigger": "minecraft:tick"
+      }
+  },
+  "requirements": [
+      [
+          "isThere"
+      ]
+  ]
+}

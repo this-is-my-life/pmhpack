@@ -1,0 +1,32 @@
+{
+  "parent": "caose:caose/incaose",
+  "display": {
+      "title": {
+          "text": "카오스에선 카오스법을 따라야 합니다",
+          "color": "yellow",
+          "bold": false
+      },
+      "description": {
+          "text": "/function rules를 입력하세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:grass_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

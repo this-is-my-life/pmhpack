@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/barned_barrier",
+  "display": {
+      "title": {
+          "text": "공허를 정의하다",
+          "color": "dark_purple",
+          "bold": false
+      },
+      "description": {
+          "text": "구조물 공허 공간을 구워 구조물 블럭을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:structure_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:structure_block",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

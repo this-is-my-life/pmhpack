@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:dirt"
+    },
+    "result": "minecraft:iron_nugget",
+    "experience": 0,
+    "cookingtime": 20
+}

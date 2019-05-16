@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/barned_head",
+  "display": {
+      "title": {
+          "text": "타버린 머리",
+          "color": "black",
+          "bold": false
+      },
+      "description": {
+          "text": "스켈레톤 머리를 구워 위더 스켈레톤 머리를 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:wither_skeleton_skull"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:wither_skeleton_skull",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

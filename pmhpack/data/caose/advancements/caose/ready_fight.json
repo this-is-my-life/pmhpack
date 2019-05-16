@@ -1,0 +1,48 @@
+{
+  "parent": "caose:caose/incaose",
+  "display": {
+      "title": {
+          "text": "새로운 파이터(이)가 나타났다!",
+          "color": "aqua",
+          "bold": false
+      },
+      "description": {
+          "text": "777 4 777로 이동하세요!",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:stone_sword"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "isLocate": {
+      	"trigger": "minecraft:location",
+      	"conditions": {
+			"position": {
+				"x": {
+					"min": 770,
+					"max": 780
+				},
+				"y": {
+					"min": 4,
+					"max": 16
+				},
+				"z": {
+					"min": 770,
+					"max": 780
+				}
+			}
+      	}
+    }
+  },
+  "requirements": [
+      [
+          "isLocate"
+      ]
+  ]
+}

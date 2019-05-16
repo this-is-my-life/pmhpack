@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:creeper_head"
+    },
+    "result": "minecraft:skeleton_skull",
+    "experience": 0,
+    "cookingtime": 800
+}

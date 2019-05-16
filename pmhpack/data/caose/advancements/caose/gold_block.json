@@ -1,0 +1,44 @@
+{
+  "parent": "caose:caose/iron_block",
+  "display": {
+      "title": {
+          "text": "금블럭은 구우면 뭐가 될까요?",
+          "color": "light_purple",
+          "bold": false
+      },
+      "description": {
+          "text": "금 블럭을 얻으세요",
+          "color": "gold"
+      },
+      "icon": {
+          "item": "minecraft:gold_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "item": "minecraft:gold_block",
+                  "count": {
+                      "min": 1,
+                      "max": 99999999
+                  }
+              }
+          ]
+        
+      }
+    }
+  },
+  "requirements": [
+      [
+          "impossible"
+      ]
+  ]
+}

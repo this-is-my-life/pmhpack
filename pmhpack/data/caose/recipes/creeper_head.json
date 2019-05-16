@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:creeper_spawn_egg"
+    },
+    "result": "minecraft:creeper_head",
+    "experience": 0,
+    "cookingtime": 200
+}
